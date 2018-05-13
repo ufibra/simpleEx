@@ -7,4 +7,4 @@ class CourseraSpider(scrapy.Spider):
     start_urls = ['https://www.coursera.org/']
 
     def parse(self, response):
-        self.log('First one! Scrapy Project')
+        self.log('First one! Basic Scrapy Project')
