@@ -8,3 +8,7 @@ XPath usage:
 - run: div = response.xpath('copy a xpath on browser')
 
 - then you run: div.extract()
+
+Running spiders scripts:
+
+- run: scrapy crawl 'spidername'
