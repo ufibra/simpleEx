@@ -12,3 +12,7 @@ XPath usage:
 Running spiders scripts:
 
 - run: scrapy crawl 'spidername'
+
+Save into a json file:
+
+- run: scrapy crawl 'spidername' -o spidername.json
