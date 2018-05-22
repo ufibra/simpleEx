@@ -8,6 +8,6 @@ class SupsSpider(scrapy.Spider):
     start_urls = ['https://loja.boldnutrition.com.br/']
 
     def parse(self, response):
-        results = response.xpath("//*[contains(@id, 'price_display')]/text()")
+        results = response.css('.product-grid .item-price-container ::text')
         for result in results:
             print result.extract()
