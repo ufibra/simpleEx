@@ -9,6 +9,8 @@ class SupsSpider(scrapy.Spider):
 
     def parse(self, response):
         results = response.css('.product-grid .item')
+        name = scrapy.Field()
+        price = scrapy.Field()
         for result in results:
             name = result.css('.product-item_name ::text').extract_first()
             price = result.css('.item-price ::text').extract_first()
